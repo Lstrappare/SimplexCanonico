@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación lineal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Programación Lineal</h1>
+    </header>
+    <form action="">
+      <fieldset>
+        <!-- Variables y restricciones del modelo -->
+        <legend>Selecciona las Variables y Restricciones que hay en tu modelo</legend>
+        Variables: <input type="number" name="variables" id="variables" min="1">
+        Restricciones: <input type="number" name="restrcciones" id="restrcciones" min="1">
+        <input type="submit" value="Continuar" onclick="agregarInputs(event)">
+      </fieldset>
+      <!-- Modelo -->
+      <fieldset>
+        <legend>Rellena los campos en base a tu modelo</legend>
+        <p id="inputsVariables"></p>
+        <p id="inputsRestricciones"></p>
+        <div id="inputResolver"></div>
+      </fieldset>
+    </form>
+    <h2>Resultados</h2>
+    <div id="resultados"></div>
+  </div>
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+  <script src="script.js"></script>
+</body>
+</html>
